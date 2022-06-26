@@ -2,7 +2,20 @@
     padding-top:0.2em !important;
     padding-bottom: 0.2em !important;
 }
+.m-padding-medium{
+    padding-top:1em !important;
+    padding-bottom: 1em !important;
+}
 .max-pad{
     padding-top:5em !important;
     padding-bottom: 5em !important;
+}
+.incline-block{
+    display: inline-block !important;
+}
+.fontsmall{
+    font-size: 9px !important;
+}
+.ml0{
+    margin-left: 0px !important;
 }

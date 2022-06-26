@@ -11,15 +11,21 @@
 
 <body>
 <!-- 导航 -->
+<!--attached去掉圆角 segment类似于小段 inverted黑色，-->
 <nav class="ui inverted segment attached m-padding-mini">
+    <!--    里面做了一个导航栏，我们在外边加了一个container 这样可以让他左右有边距-->
     <div class="ui container">
+        <!--        menu是专门做类似导航栏的，使用menu后,里面div可以设置item，设置secondary鼠标移到超链接上，效果很好看-->
+        <!--        active是按钮（超链接）默认激活效果-->
         <div class="ui inverted secondary menu">
             <h2 class="ui teal header item">Blog</h2>
-            <a href="#" class="item"><i class="home icon"></i>首页</a>
+            <a href="#" class="item active"><i class="home icon"></i>首页</a>
             <a href="#" class="item"><i class="idea icon"></i>分类</a>
             <a href="#" class="item"><i class="tags icon"></i>标签</a>
             <a href="#" class="item"><i class="info icon"></i>关于我</a>
+            <!--            如果靠右的元素还比较多的话，可以将div也设置成menu，这里只有一个搜索框，就直接right了-->
             <div class="right item">
+                <!--                trasparent是透明，class为icon input 里面可以使用input 和icon，并且会帮你整理样式-->
                 <div class="ui icon input inverted transparent">
                     <input type="text" placeholder="Search...">
                     <i class="search icon link"></i>
@@ -32,24 +38,504 @@
 </nav>
 <!-- 中间内容 -->
 <div>
-    <br><br><br><br><br><br><br><br><br><br>
+    <div class="ui container m-padding-medium">
+        <div class="ui grid">
+            <div class="eleven wide column">
+                <!--                header-->
+                <!--             attached会磨平圆润，变成长方体，这样才能attach，top attached就是上面是圆润的，其他地方是正正方方   -->
+                <div class="ui segment top attached">
+                    <div class="ui grid two column ">
+                        <div class="column">
+                            <h3 class="header teal ui">博客</h3>
+                        </div>
+                        <div class="column ui right aligned">
+                            共<h3 class="header orange ui incline-block">14</h3>篇博客
+                        </div>
+                    </div>
+                </div>
+                <!--              中间部分  list结构-->
+                <!--                两个segment中间会有空隙，有时候我们希望连接
+                使用 attached
+                -->
+                <div class="ui segment attached">
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment vertical">
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解上面是财富自由吗?</h3>
+                                <p>
+                                    风景指的是供观赏的自然风光、景物，包括自然景观和人文景观。风景是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，含义广泛。在中国古书上，尤其纯文艺作品的诗文方面，更是延用已...</p>
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <!--  用grid做，grid外层可以使用centeraligned是里面小元件居中，如果要单独上下居中，去小元件上面设置middle aligned-->
+                                        <div class="ui grid  center aligned ">
+                                            <div class="three wide column middle aligned">
+                                                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqingkong.net%2Fupload%2Fimage%2Fbig%2F31%2F3138_160126154249.jpg&refer=http%3A%2F%2Fqingkong.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658835675&t=a2c27b790271430304bd048a0f692d11"
+                                                     class="image avatar ui" alt="">
+                                            </div>
+                                            <div class="thirteen wide column left aligned ">
+                                                <div class="ui list link horizontal ">
+                                                    <div class="item  middle aligned">
+                                                        <a href="#" class="header  middle aligned">李点</a>
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="calendar icon"></i>
+                                                        2017-10-02
+                                                    </div>
+                                                    <div class="item  middle aligned">
+                                                        <i class="icon eye"></i>1234
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <a href="#" target="_blank" class="ui label teal ">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242331232260-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658832174&t=a5d3a97a37418015f6bf28bf2855d845"
+                                         alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                两个按钮-->
+                <div class="ui segment bottom attached">
+                    <div class="ui grid two column ">
+                        <div class="column left aligned ui ">
+                            <a class="ui button mini" href="#">上一页</a>
+                        </div>
+                        <div class="column ui right aligned">
+                            <a class="ui button mini" href="#">下一页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="five wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- 结尾 -->
-<footer class="ui inverted  segment max-pad">
+<footer class="ui inverted   segment max-pad">
+    <!--    center aligned配合container使用，使文本居中-->
     <div class="container ui center aligned">
+        <!--grid划分，这里divided是显示grid各个部分的分割线-->
         <div class="ui grid divided inverted ">
             <div class="three wide column">
                 <img src="./static/images/wechat.jpg" class="ui rounded image" style="width: 110px">
             </div>
             <div class="three wide column">
-
-                    <h4 class="ui inverted header">最新博客</h4>
-                    <div class="ui inverted link list">
-                        <a href="#" class="item">用户故事(User Story)</a>
-                        <a href="#" class="item">用户故事(User Story)</a>
-                        <a href="#" class="item">用户故事(User Story)</a>
-                        <a href="#" class="item">用户故事(User Story)</a>
-                    </div>
+                <!--header配合H1234使用-->
+                <h4 class="ui inverted header">最新博客</h4>
+                <!--                list配合item使用，默认上下而非左右排列-->
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                </div>
 
             </div>
             <div class="three wide column">
@@ -65,7 +551,7 @@
                 <p>这是一个可以分享你的idea的博客园</p>
             </div>
         </div>
-
+        <!--section 和divider连用 有一定间隙，好看-->
         <div class="inverted ui section divider"></div>
         <p>Copyright 2021-2022 Blog design by lidian</p>
     </div>
