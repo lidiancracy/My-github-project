@@ -12,12 +12,12 @@
 <body>
 <!-- 导航 -->
 <!--attached去掉圆角 segment类似于小段 inverted黑色，-->
-<nav class="ui inverted segment attached m-padding-mini">
+<nav class="ui inverted segment attached m-padding-mini ">
     <!--    里面做了一个导航栏，我们在外边加了一个container 这样可以让他左右有边距-->
     <div class="ui container">
         <!--        menu是专门做类似导航栏的，使用menu后,里面div可以设置item，设置secondary鼠标移到超链接上，效果很好看-->
         <!--        active是按钮（超链接）默认激活效果-->
-        <div class="ui inverted secondary menu">
+        <div class="ui inverted secondary menu stackable">
             <h2 class="ui teal header item">Blog</h2>
             <a href="#" class="item active"><i class="home icon"></i>首页</a>
             <a href="#" class="item"><i class="idea icon"></i>分类</a>
@@ -39,7 +39,7 @@
 <!-- 中间内容 -->
 <div>
     <div class="ui container m-padding-medium">
-        <div class="ui grid">
+        <div class="ui grid stackable">
             <div class="eleven wide column">
                 <!--                header-->
                 <!--             attached会磨平圆润，变成长方体，这样才能attach，top attached就是上面是圆润的，其他地方是正正方方   -->
@@ -512,7 +512,130 @@
                 </div>
             </div>
             <div class="five wide column">
-                <div class="ui segment"></div>
+                <div class="ui segments">
+                    <!--                    右边 分类 +灯泡 more-->
+                    <div class="ui segment secondary">
+                        <div class="ui grid two column">
+                            <div class="column">
+                                <i class=" idea icon"></i>分类
+                            </div>
+                            <div class="column right aligned">
+                                more <i class="icon double right angle  "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    6大分类-->
+                    <div class="ui segment teal">
+                        <div class="ui vertical fluid menu ">
+                            <a class=" item ">
+                                学习日志
+                                <div class="ui label teal basic">12</div>
+                            </a>
+                            <a class="item">
+                                思考与感悟
+                                <div class="ui label teal basic">22</div>
+                            </a>
+                            <a class="item">
+                                清单
+                                <div class="ui label teal basic">122</div>
+                            </a>
+                            <a class="item">
+                                Javascript
+                                <div class="ui label teal basic">132</div>
+                            </a>
+                            <a class="item">
+                                创业
+                                <div class="ui label teal basic">112</div>
+                            </a>
+                            <a class="item">
+                                认知升级
+                                <div class="ui label teal basic">12</div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="ui segments">
+                    <!--                    标签-->
+                    <div class="ui segment secondary">
+                        <div class="ui grid two column">
+                            <div class="column">
+                                <i class=" tags icon"></i>标签
+                            </div>
+                            <div class="column right aligned">
+                                more <i class="icon double right angle  "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment teal">
+                        <a class="ui red label margin-mini">方法论
+                            <div class="detail">22</div>
+                        </a>
+                        <a class="ui orange label margin-mini">刻意练习
+                            <div class="detail">2</div>
+                        </a>
+                        <a class="ui yellow label margin-mini">财富自由
+                            <div class="detail">2</div>
+                        </a>
+                        <a class="ui olive label margin-mini">软件方法
+                            <div class="detail">222</div>
+                        </a>
+                        <a class="ui green label margin-mini">user story
+                            <div class="detail">212</div>
+                        </a>
+                        <a class="ui teal label margin-mini">Springboot
+                            <div class="detail">12</div>
+                        </a>
+                        <a class="ui blue label margin-mini">javascript
+                            <div class="detail">1</div>
+                        </a>
+                        <a class="ui violet label margin-mini">Css
+                            <div class="detail">17</div>
+                        </a>
+                    </div>
+                    <!--                    各个标签-->
+                </div>
+                <!--                    最新推荐-->
+                <div class="ui segments">
+                    <div class="ui segment secondary">
+                        <div class="ui grid two column">
+                            <div class="column">
+                                <i class=" newspaper outline icon"></i>最新推荐
+                            </div>
+                            <div class="column right aligned">
+                                <!--                                more <i class="icon double right angle  "></i>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui vertical fluid menu topmar0 stackable">
+                        <a class=" item ">
+                            失败要趁早
+                        </a>
+                        <a class="item">
+                            失败要趁早
+                        </a>
+                        <a class="item">
+                            失败要趁早
+                        </a>
+                        <a class="item">
+                            失败要趁早
+                        </a>
+                        <a class="item">
+                            失败要趁早
+                        </a>
+                        <a class="item">
+                            失败要趁早
+                        </a>
+                    </div>
+
+                </div>
+                <!--                    二维码-->
+                <h4 class="ui horizontal header divider">扫码关注我</h4>
+
+                <img class="ui centered small image" src="./static/images/wechat.jpg" alt="">
+
             </div>
         </div>
     </div>
