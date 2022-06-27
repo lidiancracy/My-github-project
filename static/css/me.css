@@ -1,3 +1,6 @@
+body{
+    background: url("../images/bg.png");
+}
 .m-padding-mini{
     padding-top:0.2em !important;
     padding-bottom: 0.2em !important;
@@ -24,4 +27,15 @@
 }
 .topmar0{
     margin-top: 0px !important;
+}
+.margin1em{
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+}
+.containermaxwidth{
+    max-width: 60em !important;
+    margin: auto;
+}
+.padlr{
+    padding:0  3em !important;
 }
